@@ -1,7 +1,7 @@
 #!/bin/bash -l
 
 echo test secret 1 is $TEST_SECRET
-echo test secret 2 is $INPUTSECRETTEST
+echo test secret 2 is $INPUT_TESTSECRET
 
 env | grep INPUT
 
