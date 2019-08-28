@@ -8,4 +8,6 @@ jobs:
       - name: Git checkout
         uses: actions/checkout@v1
       - name: Docker build
-        run: docker build . --file Dockerfile --tag tedmiston/kube-aws-action:$(date +%s)
+        run: docker build . --file Dockerfile --tag tedmiston/kube-aws-action
+      - name: Docker run
+        run: docker run --rm tedmiston/kube-aws-action
