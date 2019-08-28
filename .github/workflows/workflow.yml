@@ -13,4 +13,4 @@ jobs:
         # uses: "${GITHUB_REPOSITORY}@${GITHUB_SHA}"
         uses: tedmiston/kube-aws-action@master
         env:
-          foo_bar: 23
+          FOO_BAR: 23
