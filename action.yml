@@ -1,7 +1,10 @@
 name: kube-aws Action
 description: Deploy and update Kubernetes clusters with kube-aws from GitHub Actions
 author: Taylor D. Edmiston
-inputs: 
+inputs:
+  clusterDirName:
+    description: A directory name for the cluster to live at
+    required: true
   clusterName:
     description: Cluster name for kube-aws
     default: k8s
