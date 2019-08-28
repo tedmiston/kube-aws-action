@@ -7,23 +7,22 @@ set -euxo pipefail
 
 # env | grep INPUT
 
-clusterName=$INPUT_CLUSTERNAME
-clusterDirName=$INPUT_CLUSTERDIRNAME
-
-FOO_BAR=$FOO_BAR
+# echo INPUT_CLUSTERNAME=$INPUT_CLUSTERNAME
+# echo INPUT_CLUSTERDIRNAME=$INPUT_CLUSTERDIRNAME
+# echo FOO_BAR=$FOO_BAR
 
 
 kube-aws version
 
 
-mkdir $clusterDirName
-cd $clusterDirName
+mkdir $INPUT_CLUSTERDIRNAME
+cd $INPUT_CLUSTERDIRNAME
 pwd
 
 
 # create cluster.yaml
 kube-aws init \
---cluster-name=my-cluster \
+--cluster-name="${INPUT_CLUSTERNAME}" \
 --region=us-west-1 \
 --availability-zone=us-west-1c \
 --hosted-zone-id=TODO \
