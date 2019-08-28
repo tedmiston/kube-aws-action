@@ -9,4 +9,4 @@ jobs:
       - name: Docker build
         run: docker build . --file Dockerfile --tag $GITHUB_REPOSITORY:$GITHUB_SHA
       - name: Docker run
-        run: docker run --rm $GITHUB_REPOSITORY:$GITHUB_SHA
+        uses: $GITHUB_REPOSITORY:$GITHUB_SHA
