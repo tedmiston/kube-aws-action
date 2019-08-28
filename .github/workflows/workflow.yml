@@ -15,4 +15,4 @@ jobs:
         env:
           FOO_BAR: 23
         with:
-          CLUSTERDIRNAME: k8s.example.com
+          CLUSTERDIRNAME: ${{ inputs.clusterName }}.example.com
