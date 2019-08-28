@@ -11,4 +11,4 @@ echo 3 clusterName=$INPUT_CLUSTERNAME
 echo FOO_BAR=$FOO_BAR
 echo clusterDirName=$INPUT_CLUSTERDIRNAME
 
-env | grep $INPUT
+env | grep INPUT
