@@ -1,5 +1,6 @@
 #!/bin/bash -l
 
-echo "hello $1"
+kube-aws version
 
-kube-aws --help
+mkdir my-cluster
+cd my-cluster
