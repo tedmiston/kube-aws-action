@@ -15,4 +15,4 @@ jobs:
         env:
           FOO_BAR: 23
         with:
-          CLUSTERDIRNAME: ${{ inputs.clusterName }}.example.com
+          CLUSTERDIRNAME: ${INPUT_CLUSTERNAME}.example.com
