@@ -1,9 +1,9 @@
 #!/bin/bash -l
 
-echo test secret 1 is $TEST_SECRET
-echo test secret 2 is $INPUT_TESTSECRET
+# echo test secret 1 is $TEST_SECRET
+# echo test secret 2 is $INPUT_TESTSECRET
 
-env | grep INPUT
+# env | grep INPUT
 
 clusterName=$INPUT_CLUSTERNAME
 clusterDirName=$INPUT_CLUSTERDIRNAME
