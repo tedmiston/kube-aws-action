@@ -2,10 +2,10 @@ FROM debian
 
 # download kube-aws
 RUN apt-get update && apt-get install --yes wget
-RUN wget https://github.com/kubernetes-incubator/kube-aws/archive/v0.14.1.tar.gz
-RUN tar xzf v0.14.1.tar.gz
+RUN wget https://github.com/kubernetes-incubator/kube-aws/releases/download/v0.14.1/kube-aws-linux-amd64.tar.gz
+RUN tar xzf kube-aws-linux-amd64.tar.gz
+RUN mv linux-amd64/kube-aws /usr/local/bin
 RUN rm -rf v0.14.1.tar.gz
-RUN ls
 
 # verify kube-aws
 RUN kube-aws version
