@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo hello actions
-      - uses: actions/checkout@v1
+      - name: Git checkout
+        uses: actions/checkout@v1
       - name: Docker build
         run: docker build . --file Dockerfile --tag tedmiston/kube-aws-action:$(date +%s)
