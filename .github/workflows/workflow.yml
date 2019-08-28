@@ -12,3 +12,5 @@ jobs:
       - name: Docker run
         # uses: "${GITHUB_REPOSITORY}@${GITHUB_SHA}"
         uses: tedmiston/kube-aws-action@master
+        env:
+          foo_bar: 23
