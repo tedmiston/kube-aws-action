@@ -12,6 +12,8 @@ jobs:
       - name: Docker run
         # uses: "${GITHUB_REPOSITORY}@${GITHUB_SHA}"
         uses: tedmiston/kube-aws-action@master
+        with:
+          clusterDirName: k8s2.example.com
         env:
           FOO_BAR: 23
           INPUT_CLUSTERDIRNAME: k8s.example.com
