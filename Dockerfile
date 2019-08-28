@@ -1,4 +1,4 @@
-FROM alpine:3.10
+FROM debian
 
 # download kube-aws
 RUN apt-get update && apt-get install --yes wget
