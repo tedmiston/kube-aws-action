@@ -14,5 +14,3 @@ jobs:
         uses: tedmiston/kube-aws-action@master
         env:
           foo_bar: 23
-      - name: Docker run 2
-        container: tedmiston/kube-aws-action:latest
