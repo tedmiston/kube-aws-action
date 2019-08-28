@@ -1,5 +1,7 @@
 #!/bin/bash -l
 
+set -euxo pipefail
+
 # echo test secret 1 is $TEST_SECRET
 # echo test secret 2 is $INPUT_TESTSECRET
 
