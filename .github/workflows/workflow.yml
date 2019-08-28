@@ -7,6 +7,6 @@ jobs:
       - name: Git checkout
         uses: actions/checkout@v1
       - name: Docker build
-        run: docker build . --file Dockerfile --tag tedmiston/kube-aws-action
+        run: docker build . --file Dockerfile --tag $GITHUB_REPOSITORY:$GITHUB_SHA
       - name: Docker run
-        run: docker run --rm tedmiston/kube-aws-action
+        run: docker run --rm $GITHUB_REPOSITORY:$GITHUB_SHA
