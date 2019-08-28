@@ -1,13 +1,13 @@
 #!/bin/bash -l
 
-kube-aws version
+env | grep INPUT
 
 clusterName=$INPUT_CLUSTERNAME
 clusterDirName=$INPUT_CLUSTERDIRNAME
 
 FOO_BAR=$FOO_BAR
 
-env | grep INPUT
+kube-aws version
 
 mkdir $clusterDirName
 cd $clusterDirName
