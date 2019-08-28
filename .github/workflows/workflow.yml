@@ -14,7 +14,7 @@ jobs:
         uses: tedmiston/kube-aws-action@master
         with:
           clusterDirName: k8s.example.com
-          secretTest: ${{ secrets.TEST_SECRET }}
+          testSecret: ${{ secrets.TEST_SECRET }}
         env:
           FOO_BAR: 23
           TEST_SECRET: ${{ secrets.TEST_SECRET }}
