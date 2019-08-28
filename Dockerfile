@@ -9,7 +9,7 @@ RUN rm -rf v0.14.1.tar.gz
 
 # verify kube-aws
 RUN kube-aws version
-RUN kube-aws --help
+RUN kube-aws --help --color
 
 COPY LICENSE README.md /
 
