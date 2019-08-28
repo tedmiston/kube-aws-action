@@ -6,3 +6,5 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - run: echo hello actions
+      - name: Docker build
+        run: docker build . --file Dockerfile --tag tedmiston/kube-aws-action:$(date +%s)
