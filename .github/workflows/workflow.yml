@@ -14,5 +14,5 @@ jobs:
         uses: tedmiston/kube-aws-action@master
         env:
           FOO_BAR: 23
-        with:
-          CLUSTERDIRNAME: ${{ inputs.CLUSTERNAME }}.example.com
+        args:
+          - ${{ inputs.CLUSTERNAME }}.example.com
